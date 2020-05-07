@@ -31,12 +31,10 @@ namespace NoteApp
         /// Класс, содержащий дату изменения записной книжки.
         /// </summary>
         public DateTime Changed { get; set; }
-
         public Note()
         {
             
         }
-
         /// <summary>
         /// Конструктор класса Note.
         /// </summary>
@@ -78,13 +76,5 @@ namespace NoteApp
                 _noteCategory = value; 
             }
          }   
-
-            
-    
-
     }
-
-    
-
-
 }

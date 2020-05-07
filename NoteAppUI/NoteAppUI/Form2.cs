@@ -13,13 +13,10 @@ namespace NoteAppUI
 {
     public partial class AddForm : Form
     {
-
         private Note _note;
-
         public Note Data
         {
             get
-           
             {
                 return _note;
             }
@@ -36,7 +33,6 @@ namespace NoteAppUI
                 }
             }
         }
-
         public AddForm()
         {
             InitializeComponent();
@@ -48,11 +44,8 @@ namespace NoteAppUI
             CategorycomboBox.Items.Add(NoteCategory.Phinances);
             CategorycomboBox.Items.Add(NoteCategory.Misc);
         }
-
         private void OKbutton_Click(object sender, EventArgs e)
         {
-            
-
             if(_note == null)
             {
                 _note = new Note(DatatextBox.Text, TexttextBox.Text, (NoteCategory)CategorycomboBox.SelectedIndex, DateTime.Now, DateTime.Now );
@@ -66,15 +59,12 @@ namespace NoteAppUI
                 _note.Changed = DateTime.Now;
                 _note.noteCategory = (NoteCategory)CategorycomboBox.SelectedItem;
             }
-
             this.Close();
         }
-
         private void DatatextBox_TextChanged(object sender, EventArgs e)
         {
             
         }
-
         private void CategorycomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (CategorycomboBox.SelectedIndex == -1)
@@ -84,12 +74,10 @@ namespace NoteAppUI
             NoteCategory selectedCategory;
             selectedCategory = (NoteCategory)CategorycomboBox.SelectedItem; 
         }
-
         private void CancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void TexttextBox_TextChanged(object sender, EventArgs e)
         {
 

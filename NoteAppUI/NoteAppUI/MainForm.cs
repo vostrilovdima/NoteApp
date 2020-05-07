@@ -32,7 +32,6 @@ namespace NoteAppUI
             ShowCategoryComboBox.Items.Add(NoteCategory.All);
             this.Text = "Главное окно программы";
             ShowCategoryComboBox.SelectedIndex = 7;
-
         }
         /// <summary>
         /// Функция загрузки заметок
@@ -52,7 +51,7 @@ namespace NoteAppUI
             }
             if (_project != null)
             {
-                _project.Makenote = _project.SortedList();
+                _project.MakeNote = _project.SortedList();
 
                 NotesListBox.Items.Clear();
                 var titles = _project.SortedList(NoteCategory.All);
@@ -68,25 +67,20 @@ namespace NoteAppUI
             string file = $@"{path}\NoteApp.Notes";
             ProjectManager.SaveToFile(_project, file);
         }
-
-
         private void AddButton_Click(object sender, EventArgs e)
         {
             AddNote();
 
         }
-
         private void RemoveButton_Click(object sender, EventArgs e)
         {
             RemoveNote();
         }
-
         private void EditButton_Click(object sender, EventArgs e)
         {
 
             EditNote();
         }
-
         private void addNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddNote();
@@ -101,7 +95,7 @@ namespace NoteAppUI
             if (Result == DialogResult.OK)
             {
                 var updatedData = Add.Data;
-                _project.Makenote.Add(updatedData);
+                _project.MakeNote.Add(updatedData);
                 var time = updatedData.Changed.ToLongTimeString();
                 var title = updatedData.Name;
                 NotesListBox.Items.Add(title);
@@ -122,19 +116,16 @@ namespace NoteAppUI
             }
             var selectedData = _notes[selectedIndex];
             var inner = new AddForm(); //Создаем форму       
-
             inner.Data = selectedData;  //Передаем форме данные     
             //inner.ShowDialog(); //Отображаем форму для редактирования  
             var Res = inner.ShowDialog();
             if (Res == DialogResult.OK)
             {
                 var updatedData = inner.Data; //Забираем измененные данные 
-
                 //Осталось удалить старые данные по выбранному индексу
                 //и заменить их на обновленные
                 NotesListBox.Items.RemoveAt(selectedIndex);
                 _notes.RemoveAt(selectedIndex);
-
                 _notes.Insert(selectedIndex, updatedData);
                 var time = updatedData.Changed.ToLongTimeString();
                 var text = updatedData.Name;
@@ -142,7 +133,6 @@ namespace NoteAppUI
                 CategorySort();
                 ProjectSave();
             }
-
         }
         /// <summary>
         /// Функция удаления заметки
@@ -156,18 +146,16 @@ namespace NoteAppUI
             }
             var select = _notes[selectedIndex];
             NotesListBox.Items.RemoveAt(selectedIndex);
-            _project.Makenote.Remove(select);
+            _project.MakeNote.Remove(select);
             CategorySort();
             ProjectSave();
         }
-
-        private void abotToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AbotToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormAbout Help = new FormAbout();
             Help.ShowDialog();
         }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
             ProjectSave();
@@ -184,12 +172,10 @@ namespace NoteAppUI
                 dateTimePicker2.Value = _notes[selected].Changed;
             }
         }
-
         private void NoteTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void Titlelabel_Click(object sender, EventArgs e)
         {
 
@@ -199,17 +185,14 @@ namespace NoteAppUI
         {
 
         }
-
-        private void editNoteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EditNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditNote();
         }
-
         private void removeNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RemoveNote();
         }
-
         private void ShowCategoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             CategorySort();
@@ -227,12 +210,10 @@ namespace NoteAppUI
                 NotesListBox.Items.Add(note.Name);
             }
         }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
 
         }
-
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
@@ -245,7 +226,6 @@ namespace NoteAppUI
                 }
             }
         }
-
         private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
         {
 

@@ -69,9 +69,9 @@
             this.label3.Location = new System.Drawing.Point(25, 136);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 20);
+            this.label3.Size = new System.Drawing.Size(174, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Author: Dmitry Vostrilov ";
+            this.label3.Text = "Author: Dmitry Vostrilov";
             // 
             // label4
             // 
@@ -91,10 +91,10 @@
             this.linkLabel1.Location = new System.Drawing.Point(166, 171);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(156, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(159, 20);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Vostrilov@gmail.com";
+            this.linkLabel1.Text = "savasivai@gmail.com";
             // 
             // label5
             // 
@@ -114,10 +114,10 @@
             this.linkLabel2.Location = new System.Drawing.Point(88, 204);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(185, 20);
+            this.linkLabel2.Size = new System.Drawing.Size(271, 20);
             this.linkLabel2.TabIndex = 6;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "github.com/Vostrilovdima";
+            this.linkLabel2.Text = "github.com/Vostrilovdima/NoteAPPUI";
             // 
             // label6
             // 
@@ -144,7 +144,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormAbout";
             this.Text = "About";
             this.ResumeLayout(false);

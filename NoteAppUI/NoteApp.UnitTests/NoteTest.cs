@@ -19,7 +19,6 @@ namespace NoteApp.UnitTests
             var actual = note.Name;
             Assert.AreEqual(expected, actual, "Геттер Name возвращает неправильный заголовок");
         }
-
         [Test(Description = "Позитивный тест сеттера Name")]
         public void NoteNameSet_CorrectValue()
         {

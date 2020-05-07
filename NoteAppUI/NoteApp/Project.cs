@@ -14,18 +14,17 @@ namespace NoteApp
         /// <summary>
         /// Список, в котором находится и значение из полей Note
         /// </summary>
-        public List<Note> Makenote = new List<Note>();
-
+        public List<Note> MakeNote = new List<Note>();
         public List<Note> SortedList()
         {
-            var sortedList = Makenote.OrderBy(note => note.Changed).ToList();
+            var sortedList = MakeNote.OrderBy(note => note.Changed).ToList();
             return sortedList;
         }
         public List<Note> SortedList(NoteCategory notecategory)
         {
-            Makenote = Makenote.OrderBy(note => note.Changed).ToList();
+            MakeNote = MakeNote.OrderBy(note => note.Changed).ToList();
             var titles = new List<Note>();
-            foreach (var note in Makenote)
+            foreach (var note in MakeNote)
             {
                 if (notecategory == NoteCategory.All)
                 {

@@ -1,0 +1,25 @@
+{
+  "MakeNote": [
+    {
+      "Text": "Text1",
+      "Created": "2020-01-14T00:00:00",
+      "Changed": "2020-01-14T00:00:00",
+      "Name": "Name",
+      "noteCategory": 6
+    },
+    {
+      "Text": "Text2",
+      "Created": "2020-01-14T00:00:00",
+      "Changed": "2020-01-14T00:00:00",
+      "Name": "Name2",
+      "noteCategory": 1
+    },
+    {
+      "Text": "Text3",
+      "Created": "2020-01-14T00:00:00",
+      "Changed": "2020-01-14T00:00:00",
+      "Name": "Name3",
+      "noteCategory": 0
+    }
+  ]
+}

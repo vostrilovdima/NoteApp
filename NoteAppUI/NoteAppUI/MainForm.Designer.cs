@@ -94,7 +94,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -118,7 +118,7 @@
             this.editNoteToolStripMenuItem.Name = "editNoteToolStripMenuItem";
             this.editNoteToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.editNoteToolStripMenuItem.Text = "Edit Note";
-            this.editNoteToolStripMenuItem.Click += new System.EventHandler(this.editNoteToolStripMenuItem_Click);
+            this.editNoteToolStripMenuItem.Click += new System.EventHandler(this.EditNoteToolStripMenuItem_Click);
             // 
             // removeNoteToolStripMenuItem
             // 
@@ -140,7 +140,7 @@
             this.abotToolStripMenuItem.Name = "abotToolStripMenuItem";
             this.abotToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.abotToolStripMenuItem.Text = "About";
-            this.abotToolStripMenuItem.Click += new System.EventHandler(this.abotToolStripMenuItem_Click);
+            this.abotToolStripMenuItem.Click += new System.EventHandler(this.AbotToolStripMenuItem_Click);
             // 
             // ShowCategoryComboBox
             // 
