@@ -143,7 +143,6 @@
             this.TexttextBox.Name = "TexttextBox";
             this.TexttextBox.Size = new System.Drawing.Size(682, 348);
             this.TexttextBox.TabIndex = 11;
-            this.TexttextBox.TextChanged += new System.EventHandler(this.TexttextBox_TextChanged);
             // 
             // AddForm
             // 

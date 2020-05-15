@@ -125,7 +125,7 @@
             this.removeNoteToolStripMenuItem.Name = "removeNoteToolStripMenuItem";
             this.removeNoteToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.removeNoteToolStripMenuItem.Text = "Remove Note";
-            this.removeNoteToolStripMenuItem.Click += new System.EventHandler(this.removeNoteToolStripMenuItem_Click);
+            this.removeNoteToolStripMenuItem.Click += new System.EventHandler(this.RemoveNoteToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -176,7 +176,6 @@
             this.NoteTextBox.ReadOnly = true;
             this.NoteTextBox.Size = new System.Drawing.Size(581, 358);
             this.NoteTextBox.TabIndex = 13;
-            this.NoteTextBox.TextChanged += new System.EventHandler(this.NoteTextBox_TextChanged);
             // 
             // dateTimePicker1
             // 
@@ -241,7 +240,6 @@
             this.Categorylabel.Size = new System.Drawing.Size(86, 17);
             this.Categorylabel.TabIndex = 18;
             this.Categorylabel.Text = "Category: W";
-            this.Categorylabel.Click += new System.EventHandler(this.Categorylabel_Click);
             // 
             // Titlelabel
             // 
@@ -254,7 +252,6 @@
             this.Titlelabel.Size = new System.Drawing.Size(79, 29);
             this.Titlelabel.TabIndex = 19;
             this.Titlelabel.Text = "Текст";
-            this.Titlelabel.Click += new System.EventHandler(this.Titlelabel_Click);
             // 
             // EditButton
             // 
@@ -314,9 +311,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MainForm_KeyPress);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

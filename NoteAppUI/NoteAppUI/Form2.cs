@@ -78,9 +78,5 @@ namespace NoteAppUI
         {
             this.Close();
         }
-        private void TexttextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

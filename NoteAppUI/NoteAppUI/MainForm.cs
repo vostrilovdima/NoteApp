@@ -172,24 +172,12 @@ namespace NoteAppUI
                 dateTimePicker2.Value = _notes[selected].Changed;
             }
         }
-        private void NoteTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void Titlelabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Categorylabel_Click(object sender, EventArgs e)
-        {
-
-        }
+   
         private void EditNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditNote();
         }
-        private void removeNoteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RemoveNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RemoveNote();
         }
@@ -210,10 +198,6 @@ namespace NoteAppUI
                 NotesListBox.Items.Add(note.Name);
             }
         }
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
@@ -225,10 +209,6 @@ namespace NoteAppUI
                     RemoveNote();
                 }
             }
-        }
-        private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
         }
     }
 }
